@@ -579,23 +579,23 @@ body {
 }
 
 /* Флекс на список соц сетей */
-.social-networks {
+.footer-social-networks {
   display: inline-flex;
 }
 
 /* Стили к элементу списка */
-.social-networks__item {
+.footer-social-networks__item {
   width: 44px;
   height: 44px;
 }
 
 /* Отступы (margin) в списке футера кроме последнего */
-.social-networks__item:not(:last-child) {
+.footer-social-networks__item:not(:last-child) {
   margin-right: 10px;
 }
 
 /* Стили к ссылке */
-.social-networks__link {
+.footer-social-networks__link {
   display: flex;
   width: 100%;
   height: 100%;
@@ -611,13 +611,13 @@ body {
 }
 
 /* Эффект выделения цветом при ховере и фокусе */
-.social-networks__link:hover,
-.social-networks__link:focus {
+.footer-social-networks__link:hover,
+.footer-social-networks__link:focus {
   background-color: var(--accent-color);
 }
 
 /* Наследование цвета иконками */
-.social-networks__icon {
+.footer-social-networks__icon {
   fill: currentColor;
 }
 
