@@ -642,13 +642,13 @@ body {
 }
 
 /* Флекс на div для компоновки в колонку */
-.footer-form-group {
+.footer-form__field {
   display: flex;
   flex-direction: column;
 }
 
 /* Стили к label */
-.footer-form-label {
+.footer-form__label {
   margin-bottom: 20px;
 
   font-size: 14px;
@@ -658,7 +658,7 @@ body {
 }
 
 /* Стили к полю ввода */
-.footer-form-input {
+.footer-form__input {
   width: 358px;
   min-height: 50px;
   padding: 15px 16px;
@@ -673,14 +673,14 @@ body {
 }
 
 /* Стили к плэйсхолдеру поля ввода */
-.form-input::placeholder {
+.footer-form__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
 
 /* Стили к кнопке подписки */
-.footer-form-btn {
+.footer-form__btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -705,13 +705,13 @@ body {
 }
 
 /* Стили к кнопке подписки при ховере и фокусе */
-.footer-form-btn:hover,
-.footer-form-btn:focus {
+.footer-form__btn:hover,
+.footer-form__btn:focus {
   background-color: #188ce8;
 }
 
 /* Стили к иконке на кнопке */
-.footer-icon-btn {
+.footer-form__icon {
   margin-left: 10px;
   fill: #ffffff;
 }
