@@ -518,13 +518,13 @@ body {
 }
 
 /* Преобразование из строчного в блочный элемент */
-.logo-move {
+.footer__logo {
   display: inline-block;
   margin-bottom: 20px;
 }
 
 /* Выделение белым цветом studio */
-.logo-studio {
+.logo--white-text {
   color: #ffffff;
 }
 
@@ -534,12 +534,12 @@ body {
 }
 
 /* Отступы (margin) в списке футера кроме последнего */
-.footer-contacts-item:not(:last-child) {
+.footer-contacts__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
 /* Физический адрес студии */
-.contacts-link {
+.footer-contacts__map {
   line-height: 1.71;
   color: #ffffff;
 
@@ -547,13 +547,13 @@ body {
 }
 
 /* Эффект выделения цветом при ховере и фокусе */
-.contacts-link:hover,
-.contacts-link:focus {
+.footer-contacts__map:hover,
+.footer-contacts__map:focus {
   color: var(--accent-color);
 }
 
 /* Дополнительная почта и телефон */
-.contacts-secondary {
+.footer-contacts__link {
   transition: color var(--tr-duration) var(--tr-function);
 
   display: inline-block;
@@ -563,13 +563,13 @@ body {
 }
 
 /* Эффект выделения цветом при ховере и фокусе */
-.contacts-secondary:hover,
-.contacts-secondary:focus {
+.footer-contacts__link:hover,
+.footer-contacts__link:focus {
   color: var(--accent-color);
 }
 
 /* Заголовок списка соц сетей в футере */
-.connect-title {
+.footer-title {
   margin-bottom: 20px;
 
   font-size: 14px;
@@ -579,25 +579,23 @@ body {
 }
 
 /* Флекс на список соц сетей */
-.connect-list {
+.social-networks {
   display: inline-flex;
 }
 
-/* Отступы (margin) в списке футера кроме последнего */
-.connect-item:not(:last-child) {
-  margin-right: 10px;
-}
-
 /* Стили к элементу списка */
-.connect-item {
+.social-networks__item {
   width: 44px;
   height: 44px;
 }
 
-/* Стили к ссылке */
-.connect-link {
-  transition: background-color var(--tr-duration) var(--tr-function);
+/* Отступы (margin) в списке футера кроме последнего */
+.social-networks__item:not(:last-child) {
+  margin-right: 10px;
+}
 
+/* Стили к ссылке */
+.social-networks__link {
   display: flex;
   width: 100%;
   height: 100%;
@@ -608,21 +606,23 @@ body {
 
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+
+  transition: background-color var(--tr-duration) var(--tr-function);
 }
 
 /* Эффект выделения цветом при ховере и фокусе */
-.connect-link:hover,
-.connect-link:focus {
+.social-networks__link:hover,
+.social-networks__link:focus {
   background-color: var(--accent-color);
 }
 
 /* Наследование цвета иконками */
-.connect-social-networks-icon {
+.social-networks__icon {
   fill: currentColor;
 }
 
 /* Маржин меджу блоками */
-.subcontainer-two {
+.footer--right {
   margin-left: 70px;
 }
 
