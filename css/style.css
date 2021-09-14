@@ -1045,7 +1045,7 @@ body {
 }
 
 /* Стили к тексту о соглашении */
-.modal-form__agree {
+.modal-policy {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1053,7 +1053,7 @@ body {
 }
 
 /* Стили для скрытия оригинального чекбокса */
-.modal-checkbox {
+.modal-policy__input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1064,14 +1064,40 @@ body {
   clip: rect(0 0 0 0);
 }
 
+/* Стили к созданию кастомного чекбокса через свг */
+.modal-policy__input:checked + .modal-policy__label .modal-policy__wrapper {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/* Фокус на чекбокс */
+.modal-policy__input:focus + .modal-policy__label .modal-policy__wrapper {
+  border-color: var(--accent-color);
+}
+
 /* Стили к лэйбл в соглашении */
-.check-label {
+.modal-policy__label {
   display: flex;
   align-items: center;
 
   font-size: 14px;
   line-height: 1.71;
   color: var(--text-color);
+}
+
+/* Стили к созданию кастомного чекбокса через свг */
+.modal-policy__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+
+  border: 2px solid #000000;
+  border-radius: 4px;
+
+  transition: background-color var(--tr-duration) var(--tr-function), border-color var(--tr-duration) var(--tr-function);
 }
 
 /* Стили к сылке в соглашении */
@@ -1110,30 +1136,4 @@ body {
 .modal-form__btn:hover,
 .modal-form__btn:focus {
   background-color: #188ce8;
-}
-
-/* Стили к созданию кастомного чекбокса через свг */
-.form-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 16px;
-  height: 15px;
-  margin-right: 8px;
-
-  border: 2px solid #000000;
-  border-radius: 4px;
-
-  transition: background-color var(--tr-duration) var(--tr-function), border-color var(--tr-duration) var(--tr-function);
-}
-
-/* Стили к созданию кастомного чекбокса через свг */
-.modal-checkbox:checked + .check-label .form-wrapper {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-}
-
-/* Фокус на чекбокс */
-.modal-checkbox:focus + .check-label .form-wrapper {
-  border-color: var(--accent-color);
 }
