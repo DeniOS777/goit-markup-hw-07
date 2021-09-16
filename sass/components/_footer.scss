@@ -22,8 +22,10 @@
 }
 
 /* Отступы (margin) в списке футера кроме последнего */
-.footer-contacts__item:not(:last-child) {
-  margin-bottom: 9px;
+.footer-contacts__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 /* Физический адрес студии */
