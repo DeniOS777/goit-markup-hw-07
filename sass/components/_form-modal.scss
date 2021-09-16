@@ -13,8 +13,10 @@
 }
 
 /* Последний отступ меджу текст ариа и чекбоксом */
-.modal-form__field:nth-child(4) {
-  margin-bottom: 20px;
+.modal-form__field {
+  &:nth-child(4) {
+    margin-bottom: 20px;
+  }
 }
 
 /* Текст над формой */
@@ -45,17 +47,11 @@
   border-radius: 4px;
 
   transition: border-color var(--tr-duration) var(--tr-function);
-}
-
-/* Фокус на инпуты */
-.modal-form__input:focus {
-  border-color: var(--accent-color);
-  outline: none;
-}
-
-/* Фокус на иконки и инпут */
-.modal-form__input:focus + .icon-form {
-  color: var(--accent-color);
+  /* Фокус на инпуты */
+  &:focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
 }
 
 /* Задание относительного позиционирования для иконок */
@@ -72,6 +68,10 @@
   fill: currentColor;
 
   transition: color var(--tr-duration) var(--tr-function);
+  /* Фокус на иконки и инпут */
+  .modal-form__input:focus + & {
+    color: var(--accent-color);
+  }
 }
 
 /* Стили к текстариа */
@@ -83,20 +83,18 @@
   resize: none;
 
   transition: border-color var(--tr-duration) var(--tr-function);
-}
-
-/* Фокус на текстариа */
-.modal-form__text:focus {
-  border-color: var(--accent-color);
-  outline: none;
-}
-
-/* Стили к тексту плейсхолдера */
-.modal-form__text::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  /* Фокус на текстариа */
+  &:focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
+  /* Стили к тексту плейсхолдера */
+  &::placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 /* Стили к тексту о соглашении */
@@ -185,10 +183,9 @@
   cursor: pointer;
 
   transition: background-color var(--tr-duration) var(--tr-function);
-}
-
-/* Стили ховера и фокуса на кнопку закрытия модального окна */
-.modal-form__btn:hover,
-.modal-form__btn:focus {
-  background-color: #188ce8;
+  /* Стили ховера и фокуса на кнопку закрытия модального окна */
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
