@@ -44,13 +44,12 @@
   cursor: pointer;
 
   transition: color var(--tr-duration) var(--tr-function);
-}
-
-/* Стили к кнопке при ховере и фокусе */
-.modal__btn:hover,
-.modal__btn:focus {
-  color: var(--accent-color);
-  outline: none;
+  /* Стили к кнопке при ховере и фокусе */
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    outline: none;
+  }
 }
 
 /* Наследование кнопкой цвета */
