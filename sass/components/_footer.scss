@@ -32,12 +32,11 @@
   color: #ffffff;
 
   transition: color var(--tr-duration) var(--tr-function);
-}
-
-/* Эффект выделения цветом при ховере и фокусе */
-.footer-contacts__map:hover,
-.footer-contacts__map:focus {
-  color: var(--accent-color);
+  /* Эффект выделения цветом при ховере и фокусе */
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 /* Дополнительная почта и телефон */
@@ -48,12 +47,11 @@
 
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
-}
-
-/* Эффект выделения цветом при ховере и фокусе */
-.footer-contacts__link:hover,
-.footer-contacts__link:focus {
-  color: var(--accent-color);
+  /* Эффект выделения цветом при ховере и фокусе */
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 /* Заголовок списка соц сетей в футере */
@@ -75,11 +73,10 @@
 .footer-social-networks__item {
   width: 44px;
   height: 44px;
-}
-
-/* Отступы (margin) в списке футера кроме последнего */
-.footer-social-networks__item:not(:last-child) {
-  margin-right: 10px;
+  /* Отступы (margin) в списке футера кроме последнего */
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 /* Стили к ссылке */
@@ -96,12 +93,11 @@
   border-radius: 50%;
 
   transition: background-color var(--tr-duration) var(--tr-function);
-}
-
-/* Эффект выделения цветом при ховере и фокусе */
-.footer-social-networks__link:hover,
-.footer-social-networks__link:focus {
-  background-color: var(--accent-color);
+  /* Эффект выделения цветом при ховере и фокусе */
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 /* Наследование цвета иконками */
