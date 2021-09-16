@@ -51,15 +51,14 @@
   justify-content: center;
 }
 
-/* Отступы (margin) в списке соц сетей кроме последнего */
-.social-networks__item:not(:last-child) {
-  margin-right: 10px;
-}
-
 /* Размер элементов в списке соц сетей */
 .social-networks__item {
   width: 44px;
   height: 44px;
+  /* Отступы (margin) в списке соц сетей кроме последнего */
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 /* Блоки в списке соц сетей */
@@ -75,13 +74,12 @@
   border-radius: 50%;
 
   transition: background-color var(--tr-duration) var(--tr-function), color var(--tr-duration) var(--tr-function);
-}
-
-/* Эффект выделения цветом при ховере и фокусе */
-.social-networks__link:hover,
-.social-networks__link:focus {
-  background-color: var(--accent-color);
-  color: #ffffff;
+  /* Эффект выделения цветом при ховере и фокусе */
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: #ffffff;
+  }
 }
 
 /* Наследование цвета иконками */
