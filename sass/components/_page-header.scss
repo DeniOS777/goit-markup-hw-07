@@ -93,8 +93,10 @@
 }
 
 /* Горизонтальный отступ между почтой и телефоном */
-.main-contacts__item:not(:last-child) {
-  margin-right: 50px;
+.main-contacts__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 /* Главная почта и телефон */
