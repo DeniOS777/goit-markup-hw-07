@@ -18,12 +18,11 @@
   transition: box-shadow var(--tr-duration) var(--tr-function);
 
   display: inline-block;
-}
-
-/* Эффект выделения тенью при ховере и фокусе */
-.projects__link:hover,
-.projects__link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  /* Эффект выделения тенью при ховере и фокусе */
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 /* Позиционирование отноительно div */
@@ -47,12 +46,11 @@
   color: #ffffff;
 
   background-color: rgba(33, 150, 243, 0.9);
-}
-
-/* Эффект анимации при ховере и фокусе */
-.projects__link:hover .projects__text,
-.projects__link:focus .projects__text {
-  transform: translate(0, 0);
+  /* Эффект анимации при ховере и фокусе */
+  .projects__link:hover &,
+  .projects__link:focus & {
+    transform: translate(0, 0);
+  }
 }
 
 /* Отступы под карточкой проекта */
