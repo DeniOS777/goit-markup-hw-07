@@ -44,10 +44,9 @@
   border-style: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-/* Эффект выделения кнопки цветом при ховере и фокусе */
-.hero__button:hover,
-.hero__button:focus {
-  background-color: #188ce8;
+  /* Эффект выделения кнопки цветом при ховере и фокусе */
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
