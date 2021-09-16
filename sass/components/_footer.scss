@@ -1,0 +1,121 @@
+/* Падинги в футере */
+.footer {
+  padding: 60px 0;
+
+  background-color: #2f303a;
+}
+
+/* Преобразование из строчного в блочный элемент */
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* Выделение белым цветом studio */
+.logo--white-text {
+  color: #ffffff;
+}
+
+/* Сброс курсивного начертания в теге address */
+.footer-info {
+  font-style: normal;
+}
+
+/* Отступы (margin) в списке футера кроме последнего */
+.footer-contacts__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+/* Физический адрес студии */
+.footer-contacts__map {
+  line-height: 1.71;
+  color: #ffffff;
+
+  transition: color var(--tr-duration) var(--tr-function);
+}
+
+/* Эффект выделения цветом при ховере и фокусе */
+.footer-contacts__map:hover,
+.footer-contacts__map:focus {
+  color: var(--accent-color);
+}
+
+/* Дополнительная почта и телефон */
+.footer-contacts__link {
+  transition: color var(--tr-duration) var(--tr-function);
+
+  display: inline-block;
+
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Эффект выделения цветом при ховере и фокусе */
+.footer-contacts__link:hover,
+.footer-contacts__link:focus {
+  color: var(--accent-color);
+}
+
+/* Заголовок списка соц сетей в футере */
+.footer-title {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.17;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* Флекс на список соц сетей */
+.footer-social-networks {
+  display: inline-flex;
+}
+
+/* Стили к элементу списка */
+.footer-social-networks__item {
+  width: 44px;
+  height: 44px;
+}
+
+/* Отступы (margin) в списке футера кроме последнего */
+.footer-social-networks__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* Стили к ссылке */
+.footer-social-networks__link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  color: #ffffff;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  transition: background-color var(--tr-duration) var(--tr-function);
+}
+
+/* Эффект выделения цветом при ховере и фокусе */
+.footer-social-networks__link:hover,
+.footer-social-networks__link:focus {
+  background-color: var(--accent-color);
+}
+
+/* Наследование цвета иконками */
+.footer-social-networks__icon {
+  fill: currentColor;
+}
+
+/* Маржин меджу блоками */
+.footer--right {
+  margin-left: 70px;
+}
+
+/* Выравнивание по базовой линии */
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
