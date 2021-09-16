@@ -41,14 +41,14 @@
 .nav {
   display: flex;
 }
+
 /* Задание позиционирования относительно li для подчеркивания в хедере */
 .nav__item {
   position: relative;
-}
-
-/* Горизонтальные отступы в ссылках навигации */
-.nav__item:not(:last-child) {
-  margin-right: 50px;
+  /* Горизонтальные отступы в ссылках навигации */
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 /* Ссылки навигации по страницам сайта */
@@ -62,30 +62,28 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-title-color);
-}
-
-/* Эффект выделения цветом при ховере и фокусе */
-.nav__link:hover,
-.nav__link:focus {
-  color: var(--accent-color);
+  /* Эффект выделения цветом при ховере и фокусе */
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 /* Подсвечивание текущей страницы */
 .nav__link--current {
   color: var(--accent-color);
-}
+  /* Подчеркивание текущей страницы */
+  &::after {
+    position: absolute;
+    top: 76px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
 
-/* Подчеркивание текущей страницы */
-.nav__link--current::after {
-  position: absolute;
-  top: 76px;
-  content: '';
-  display: block;
-  width: 100%;
-  height: 4px;
-
-  background-color: var(--accent-color);
-  border-radius: 2px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
 }
 
 /* Флекс списка контактов и горизонтальный отступ к контактам хедера */
@@ -111,12 +109,11 @@
   color: var(--text-color);
 
   transition: color var(--tr-duration) var(--tr-function);
-}
-
-/* Эффект выделения цветом при ховере и фокусе */
-.main-contacts__link:hover,
-.main-contacts__link:focus {
-  color: var(--accent-color);
+  /* Эффект выделения цветом при ховере и фокусе */
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 /* Стили к иконкам телефона и почты */
