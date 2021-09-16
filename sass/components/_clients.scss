@@ -12,17 +12,15 @@
   border-radius: 4px;
 
   transition: border-color var(--tr-duration) var(--tr-function);
-}
-
-/* Эффект выделения цветом при ховере и фокусе */
-.clients__item:hover,
-.clients__item:focus {
-  border-color: var(--accent-color);
-}
-
-/* Отступы (margin) в списке клиентов кроме последнего */
-.clients__item + .clients__item {
-  margin-left: 30px;
+  /* Отступы (margin) в списке клиентов кроме последнего */
+  &:not(:last-child) {
+    margin-right: 30px;
+    /* Эффект выделения цветом при ховере и фокусе */
+    &:hover,
+    &:focus {
+      border-color: var(--accent-color);
+    }
+  }
 }
 
 /* Флекс на ссылки клиентов */
@@ -36,12 +34,11 @@
   color: #afb1b8;
 
   transition: color var(--tr-duration) var(--tr-function);
-}
-
-/* Эффект выделения цветом при ховере и фокусе */
-.clients__link:hover,
-.clients__link:focus {
-  color: var(--accent-color);
+  /* Эффект выделения цветом при ховере и фокусе */
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 /* Наследование цвета иконками */
