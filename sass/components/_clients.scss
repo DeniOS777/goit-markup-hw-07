@@ -12,14 +12,14 @@
   border-radius: 4px;
 
   transition: border-color var(--tr-duration) var(--tr-function);
-  /* Отступы (margin) в списке клиентов кроме последнего */
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+
   &:not(:last-child) {
     margin-right: 30px;
-    /* Эффект выделения цветом при ховере и фокусе */
-    &:hover,
-    &:focus {
-      border-color: var(--accent-color);
-    }
   }
 }
 
@@ -34,7 +34,7 @@
   color: #afb1b8;
 
   transition: color var(--tr-duration) var(--tr-function);
-  /* Эффект выделения цветом при ховере и фокусе */
+
   &:hover,
   &:focus {
     color: var(--accent-color);
