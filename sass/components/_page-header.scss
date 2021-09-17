@@ -1,6 +1,5 @@
 /* Нижняя рамка у хедера */
 .page-header {
-  height: 80px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -74,7 +73,7 @@
 
   &::after {
     position: absolute;
-    top: 76px;
+    bottom: -1px;
     content: '';
     display: block;
     width: 100%;
