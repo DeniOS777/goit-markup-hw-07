@@ -7,9 +7,8 @@
 /* Общие стили логотипа студии для хедера и футера */
 .logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+
+  @include text-value(26px, 700, 1.19);
   color: #000000;
 }
 
@@ -45,7 +44,7 @@
 /* Задание позиционирования относительно li для подчеркивания в хедере */
 .nav__item {
   position: relative;
-  /* Горизонтальные отступы в ссылках навигации */
+
   &:not(:last-child) {
     margin-right: 50px;
   }
@@ -62,7 +61,7 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-title-color);
-  /* Эффект выделения цветом при ховере и фокусе */
+
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -72,7 +71,7 @@
 /* Подсвечивание текущей страницы */
 .nav__link--current {
   color: var(--accent-color);
-  /* Подчеркивание текущей страницы */
+
   &::after {
     position: absolute;
     top: 76px;
@@ -111,7 +110,7 @@
   color: var(--text-color);
 
   transition: color var(--tr-duration) var(--tr-function);
-  /* Эффект выделения цветом при ховере и фокусе */
+
   &:hover,
   &:focus {
     color: var(--accent-color);
