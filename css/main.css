@@ -102,7 +102,7 @@ body {
 }
 
 /* Выделение цветом части логотипа */
-.logo--blue-text {
+.logo__wrapper--blue {
   color: var(--accent-color);
 }
 
@@ -465,7 +465,7 @@ body {
 }
 
 /* Выделение белым цветом studio */
-.logo--white-text {
+.logo__wrapper--white {
   color: #ffffff;
 }
 
