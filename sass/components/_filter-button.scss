@@ -20,9 +20,7 @@
 .filter__button {
   padding: 6px 22px;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
+  @include text-value(16px, 500, 1.62);
   color: #212121;
 
   background-color: var(--button-bg-color);
@@ -32,7 +30,7 @@
 
   transition: color var(--tr-duration) var(--tr-function), background-color var(--tr-duration) var(--tr-function),
     box-shadow var(--tr-duration) var(--tr-function);
-  /* Эффект выделения цветом при ховере и фокусе */
+
   &:hover,
   &:focus {
     color: #ffffff;
