@@ -112,7 +112,7 @@ body {
 }
 
 /* Флекс на навигацию */
-.menu {
+.page-header__menu {
   display: flex;
 }
 
