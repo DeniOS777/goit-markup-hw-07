@@ -22,9 +22,8 @@
 /* Текст над формой */
 .modal__text {
   margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+
+  @include text-value(20px, 700, 1.15);
   text-align: center;
   color: var(--secondary-title-color);
 }
@@ -47,7 +46,7 @@
   border-radius: 4px;
 
   transition: border-color var(--tr-duration) var(--tr-function);
-  /* Фокус на инпуты */
+
   &:focus {
     border-color: var(--accent-color);
     outline: none;
@@ -68,7 +67,7 @@
   fill: currentColor;
 
   transition: color var(--tr-duration) var(--tr-function);
-  /* Фокус на иконки и инпут */
+
   .modal-form__input:focus + & {
     color: var(--accent-color);
   }
@@ -83,12 +82,12 @@
   resize: none;
 
   transition: border-color var(--tr-duration) var(--tr-function);
-  /* Фокус на текстариа */
+
   &:focus {
     border-color: var(--accent-color);
     outline: none;
   }
-  /* Стили к тексту плейсхолдера */
+
   &::placeholder {
     font-size: 14px;
     line-height: 1.14;
@@ -170,9 +169,7 @@
   padding: 0;
   margin: 0 auto;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
+  @include text-value(16px, 700, 1.87);
   letter-spacing: 0.06em;
   color: #ffffff;
 
@@ -183,7 +180,7 @@
   cursor: pointer;
 
   transition: background-color var(--tr-duration) var(--tr-function);
-  /* Стили ховера и фокуса на кнопку закрытия модального окна */
+
   &:hover,
   &:focus {
     background-color: #188ce8;
