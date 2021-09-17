@@ -88,8 +88,8 @@ body {
 /* Общие стили логотипа студии для хедера и футера */
 .logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.19;
   color: #000000;
 }
@@ -125,7 +125,6 @@ body {
 /* Задание позиционирования относительно li для подчеркивания в хедере */
 .nav__item {
   position: relative;
-  /* Горизонтальные отступы в ссылках навигации */
 }
 
 .nav__item:not(:last-child) {
@@ -141,7 +140,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-title-color);
-  /* Эффект выделения цветом при ховере и фокусе */
 }
 
 .nav__link:hover, .nav__link:focus {
@@ -151,7 +149,6 @@ body {
 /* Подсвечивание текущей страницы */
 .nav__link--current {
   color: var(--accent-color);
-  /* Подчеркивание текущей страницы */
 }
 
 .nav__link--current::after {
@@ -186,7 +183,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-color);
   transition: color var(--tr-duration) var(--tr-function);
-  /* Эффект выделения цветом при ховере и фокусе */
 }
 
 .main-contacts__link:hover, .main-contacts__link:focus {
@@ -216,8 +212,8 @@ body {
 .hero__title {
   margin-bottom: 30px;
   min-height: 120px;
-  font-weight: 900;
   font-size: 44px;
+  font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -240,7 +236,6 @@ body {
   border-style: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  /* Эффект выделения кнопки цветом при ховере и фокусе */
 }
 
 .hero__button:hover, .hero__button:focus {
@@ -364,8 +359,8 @@ body {
 /* Имена членов команды */
 .team__title {
   margin-bottom: 10px;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.19;
 }
 
@@ -388,7 +383,6 @@ body {
 .social-networks__item {
   width: 44px;
   height: 44px;
-  /* Отступы (margin) в списке соц сетей кроме последнего */
 }
 
 .social-networks__item:not(:last-child) {
@@ -405,7 +399,6 @@ body {
   color: #afb1b8;
   border-radius: 50%;
   transition: background-color var(--tr-duration) var(--tr-function), color var(--tr-duration) var(--tr-function);
-  /* Эффект выделения цветом при ховере и фокусе */
 }
 
 .social-networks__link:hover, .social-networks__link:focus {
@@ -430,16 +423,14 @@ body {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border-color var(--tr-duration) var(--tr-function);
-  /* Отступы (margin) в списке клиентов кроме последнего */
+}
+
+.clients__item:hover, .clients__item:focus {
+  border-color: var(--accent-color);
 }
 
 .clients__item:not(:last-child) {
   margin-right: 30px;
-  /* Эффект выделения цветом при ховере и фокусе */
-}
-
-.clients__item:not(:last-child):hover, .clients__item:not(:last-child):focus {
-  border-color: var(--accent-color);
 }
 
 /* Флекс на ссылки клиентов */
@@ -451,7 +442,6 @@ body {
   align-items: center;
   color: #afb1b8;
   transition: color var(--tr-duration) var(--tr-function);
-  /* Эффект выделения цветом при ховере и фокусе */
 }
 
 .clients__link:hover, .clients__link:focus {
@@ -495,7 +485,6 @@ body {
   line-height: 1.71;
   color: #ffffff;
   transition: color var(--tr-duration) var(--tr-function);
-  /* Эффект выделения цветом при ховере и фокусе */
 }
 
 .footer-contacts__map:hover, .footer-contacts__map:focus {
@@ -508,7 +497,6 @@ body {
   display: inline-block;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
-  /* Эффект выделения цветом при ховере и фокусе */
 }
 
 .footer-contacts__link:hover, .footer-contacts__link:focus {
@@ -533,7 +521,6 @@ body {
 .footer-social-networks__item {
   width: 44px;
   height: 44px;
-  /* Отступы (margin) в списке футера кроме последнего */
 }
 
 .footer-social-networks__item:not(:last-child) {
@@ -551,7 +538,6 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   transition: background-color var(--tr-duration) var(--tr-function);
-  /* Эффект выделения цветом при ховере и фокусе */
 }
 
 .footer-social-networks__link:hover, .footer-social-networks__link:focus {
@@ -607,7 +593,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  /* Стили к плэйсхолдеру поля ввода */
 }
 
 .footer-form__input::placeholder {
@@ -625,8 +610,8 @@ body {
   padding: 10px 0;
   min-width: 200px;
   min-height: 50px;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: #ffffff;
@@ -636,7 +621,6 @@ body {
   background-color: #2196f3;
   cursor: pointer;
   transition: background-color var(--tr-duration) var(--tr-function);
-  /* Стили к кнопке подписки при ховере и фокусе */
 }
 
 .footer-form__btn:hover, .footer-form__btn:focus {
@@ -668,8 +652,8 @@ body {
 /* Стили к кнопкам фильтра */
 .filter__button {
   padding: 6px 22px;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.62;
   color: #212121;
   background-color: var(--button-bg-color);
@@ -677,7 +661,6 @@ body {
   border-style: none;
   border-radius: 4px;
   transition: color var(--tr-duration) var(--tr-function), background-color var(--tr-duration) var(--tr-function), box-shadow var(--tr-duration) var(--tr-function);
-  /* Эффект выделения цветом при ховере и фокусе */
 }
 
 .filter__button:hover, .filter__button:focus {
@@ -705,7 +688,6 @@ body {
 .projects__link {
   transition: box-shadow var(--tr-duration) var(--tr-function);
   display: inline-block;
-  /* Эффект выделения тенью при ховере и фокусе */
 }
 
 .projects__link:hover, .projects__link:focus {
@@ -731,7 +713,6 @@ body {
   line-height: 1.56;
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
-  /* Эффект анимации при ховере и фокусе */
 }
 
 .projects__link:hover .projects__text,
@@ -799,7 +780,6 @@ body {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  /* Стили к скрытому модальному окну */
 }
 
 .backdrop.is-hidden .modal {
@@ -825,7 +805,6 @@ body {
   border-radius: 50%;
   cursor: pointer;
   transition: color var(--tr-duration) var(--tr-function);
-  /* Стили к кнопке при ховере и фокусе */
 }
 
 .modal__btn:hover, .modal__btn:focus {
@@ -860,8 +839,8 @@ body {
 /* Текст над формой */
 .modal__text {
   margin-bottom: 12px;
-  font-weight: 700;
   font-size: 20px;
+  font-weight: 700;
   line-height: 1.15;
   text-align: center;
   color: var(--secondary-title-color);
@@ -884,7 +863,6 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color var(--tr-duration) var(--tr-function);
-  /* Фокус на инпуты */
 }
 
 .modal-form__input:focus {
@@ -905,7 +883,6 @@ body {
   transform: translateY(-50%);
   fill: currentColor;
   transition: color var(--tr-duration) var(--tr-function);
-  /* Фокус на иконки и инпут */
 }
 
 .modal-form__input:focus + .modal-form__icon {
@@ -920,8 +897,6 @@ body {
   border-radius: 4px;
   resize: none;
   transition: border-color var(--tr-duration) var(--tr-function);
-  /* Фокус на текстариа */
-  /* Стили к тексту плейсхолдера */
 }
 
 .modal-form__text:focus {
@@ -1005,8 +980,8 @@ body {
   height: 50px;
   padding: 0;
   margin: 0 auto;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: #ffffff;
@@ -1016,7 +991,6 @@ body {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color var(--tr-duration) var(--tr-function);
-  /* Стили ховера и фокуса на кнопку закрытия модального окна */
 }
 
 .modal-form__btn:hover, .modal-form__btn:focus {
