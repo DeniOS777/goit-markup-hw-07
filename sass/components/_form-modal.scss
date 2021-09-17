@@ -114,17 +114,14 @@
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
-}
 
-/* Стили к созданию кастомного чекбокса через свг */
-.modal-policy__input:checked + .modal-policy__label .modal-policy__wrapper {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-}
-
-/* Фокус на чекбокс */
-.modal-policy__input:focus + .modal-policy__label .modal-policy__wrapper {
-  border-color: var(--accent-color);
+  &:focus + .modal-policy__label .modal-policy__wrapper {
+    border-color: var(--accent-color);
+  }
+  &:checked + .modal-policy__label .modal-policy__wrapper {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
 }
 
 /* Стили к лэйбл в соглашении */
