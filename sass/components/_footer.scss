@@ -34,7 +34,7 @@
   color: #ffffff;
 
   transition: color var(--tr-duration) var(--tr-function);
-  /* Эффект выделения цветом при ховере и фокусе */
+
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -49,7 +49,7 @@
 
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
-  /* Эффект выделения цветом при ховере и фокусе */
+
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -75,7 +75,7 @@
 .footer-social-networks__item {
   width: 44px;
   height: 44px;
-  /* Отступы (margin) в списке футера кроме последнего */
+
   &:not(:last-child) {
     margin-right: 10px;
   }
@@ -95,7 +95,7 @@
   border-radius: 50%;
 
   transition: background-color var(--tr-duration) var(--tr-function);
-  /* Эффект выделения цветом при ховере и фокусе */
+
   &:hover,
   &:focus {
     background-color: var(--accent-color);
