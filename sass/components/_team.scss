@@ -30,9 +30,7 @@
 .team__title {
   margin-bottom: 10px;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+  @include text-value(16px, 500, 1.19);
 }
 
 /* Профессии членов команды */
@@ -55,7 +53,7 @@
 .social-networks__item {
   width: 44px;
   height: 44px;
-  /* Отступы (margin) в списке соц сетей кроме последнего */
+
   &:not(:last-child) {
     margin-right: 10px;
   }
@@ -74,7 +72,7 @@
   border-radius: 50%;
 
   transition: background-color var(--tr-duration) var(--tr-function), color var(--tr-duration) var(--tr-function);
-  /* Эффект выделения цветом при ховере и фокусе */
+
   &:hover,
   &:focus {
     background-color: var(--accent-color);
