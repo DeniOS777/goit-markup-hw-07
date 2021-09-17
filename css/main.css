@@ -930,14 +930,12 @@ body {
   clip: rect(0 0 0 0);
 }
 
-/* Стили к созданию кастомного чекбокса через свг */
-.modal-policy__input:checked + .modal-policy__label .modal-policy__wrapper {
-  background-color: var(--accent-color);
+.modal-policy__input:focus + .modal-policy__label .modal-policy__wrapper {
   border-color: var(--accent-color);
 }
 
-/* Фокус на чекбокс */
-.modal-policy__input:focus + .modal-policy__label .modal-policy__wrapper {
+.modal-policy__input:checked + .modal-policy__label .modal-policy__wrapper {
+  background-color: var(--accent-color);
   border-color: var(--accent-color);
 }
 
