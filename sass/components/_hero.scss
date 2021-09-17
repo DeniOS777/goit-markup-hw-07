@@ -17,9 +17,7 @@
   margin-bottom: 30px;
   min-height: 120px;
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  @include text-value(44px, 900, 1.36);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
@@ -33,9 +31,7 @@
   min-width: 200px;
   min-height: 50px;
 
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.87;
+  @include text-value(16px, 700, 1.87);
   letter-spacing: 0.06em;
   color: #ffffff;
 
@@ -44,7 +40,7 @@
   border-style: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  /* Эффект выделения кнопки цветом при ховере и фокусе */
+
   &:hover,
   &:focus {
     background-color: #188ce8;
